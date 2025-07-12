@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import styles from './AboutSection.module.css';
+import profilePhoto from '../../assets/about-me-profile-photo.jpg';
 
 const AboutSection = () => {
   return (
@@ -49,7 +50,7 @@ const AboutSection = () => {
           <div className={styles.imageContent}>
             <div className={styles.profileImage}>
               <div className={styles.imagePlaceholder}>
-                <span className={styles.imageIcon}>🏔️</span>
+                <img src={profilePhoto} alt="Samuel B. - Trail running in the forest" />
               </div>
             </div>
           </div>
