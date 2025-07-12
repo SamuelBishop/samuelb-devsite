@@ -29,27 +29,118 @@
 
 .toolGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--spacing-xl);
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-2xl);
+  align-items: stretch;
 }
 
 .toolCategory {
   background-color: var(--mist-gray);
-  padding: var(--spacing-xl);
-  border-radius: var(--radius-lg);
+  padding: var(--spacing-2xl);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--stone-light);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.toolCategory::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--forest-green) 0%, var(--alpine-blue) 100%);
+}
+
+.toolCategory:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--forest-green);
 }
 
 .toolCategory h3 {
   color: var(--granite-gray);
   margin-bottom: var(--spacing-md);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.tools {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
 
 .tools span {
   display: inline-block;
   background-color: var(--forest-green);
   color: var(--summit-white);
-  padding: 0.5rem 1rem;
-  margin: 0.25rem;
+  padding: 0.7rem 1.4rem;
+  margin: 0.4rem;
   border-radius: var(--radius-full);
   font-size: 0.9rem;
-} 
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  box-shadow: 0 2px 4px rgba(39, 174, 96, 0.2);
+  transition: all var(--transition-normal);
+  cursor: default;
+}
+
+.tools span:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
+  background-color: var(--forest-dark);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .toolGrid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+  
+  .toolCategory {
+    padding: var(--spacing-xl);
+  }
+  
+  .toolCategory h3 {
+    font-size: 1.15rem;
+  }
+  
+  .tools span {
+    padding: 0.6rem 1.2rem;
+    margin: 0.3rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .toolCategory h3 {
+    font-size: 1.1rem;
+  }
+  
+  .tools span {
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+    font-size: 0.8rem;
+  }
+}
