@@ -5,7 +5,13 @@
   "type": "module",
   "description": "Personal portfolio for software engineer & mountain athlete",
   "author": "Samuel B.",
-  "keywords": ["portfolio", "react", "typescript", "mountain-athlete", "software-engineer"],
+  "keywords": [
+    "portfolio",
+    "react",
+    "typescript",
+    "mountain-athlete",
+    "software-engineer"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -15,10 +21,11 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
+    "framer-motion": "^10.16.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.8.0",
-    "framer-motion": "^10.16.0"
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^6.8.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
@@ -45,4 +52,4 @@
       "last 1 safari version"
     ]
   }
-} 
+}
