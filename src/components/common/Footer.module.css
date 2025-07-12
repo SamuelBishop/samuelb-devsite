@@ -64,6 +64,7 @@
   color: var(--summit-white);
   margin-bottom: var(--spacing-md);
   position: relative;
+  --underline-width: 70px;
 }
 
 .sectionTitle::after {
@@ -71,10 +72,14 @@
   position: absolute;
   bottom: -4px;
   left: 0;
-  width: 70px;
+  width: var(--underline-width);
   height: 2px;
   background-color: var(--forest-green);
   border-radius: 1px;
+}
+
+.sectionTitleTrailUpdates {
+  --underline-width: 105px;
 }
 
 /* Navigation */

@@ -72,7 +72,7 @@ const Footer = () => {
 
           {/* Newsletter */}
           <div className={styles.newsletter}>
-            <h4 className={styles.sectionTitle}>Trail Updates</h4>
+            <h4 className={`${styles.sectionTitle} ${styles.sectionTitleTrailUpdates}`}>Trail Updates</h4>
             <p className={styles.newsletterText}>
               Get notified about new projects and adventures
             </p>
