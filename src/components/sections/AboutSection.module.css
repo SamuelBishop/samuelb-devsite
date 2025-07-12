@@ -1,0 +1,143 @@
+.about {
+  padding: var(--spacing-3xl) 0;
+  background-color: var(--mist-gray);
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-3xl);
+  align-items: center;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.title {
+  font-size: 2.5rem;
+  color: var(--granite-gray);
+  margin-bottom: var(--spacing-sm);
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: var(--forest-green);
+  font-weight: 600;
+  margin-bottom: var(--spacing-lg);
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.description p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--stone-dark);
+}
+
+.highlights {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.highlight {
+  padding: var(--spacing-md);
+  background-color: var(--summit-white);
+  border-radius: var(--radius-lg);
+  border-left: 4px solid var(--forest-green);
+}
+
+.highlight h3 {
+  font-size: 1.1rem;
+  color: var(--granite-gray);
+  margin-bottom: var(--spacing-sm);
+}
+
+.highlight p {
+  font-size: 0.95rem;
+  color: var(--stone-dark);
+  margin-bottom: 0;
+}
+
+.imageContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileImage {
+  position: relative;
+  width: 350px;
+  height: 350px;
+}
+
+.imagePlaceholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--forest-green) 0%, var(--forest-dark) 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-xl);
+}
+
+.imageIcon {
+  font-size: 4rem;
+  color: var(--summit-white);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-2xl);
+    text-align: center;
+  }
+  
+  .imageContent {
+    order: -1;
+  }
+  
+  .profileImage {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: var(--spacing-2xl) 0;
+  }
+  
+  .profileImage {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .imageIcon {
+    font-size: 3rem;
+  }
+} 

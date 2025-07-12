@@ -1,0 +1,35 @@
+# Personal Portfolio Development Rules
+
+## Project Context
+- React-based portfolio for software engineer & mountain athlete
+- Focus on clean, responsive design with mountain/outdoor aesthetic
+- Sections: About, Projects, Experience, Tools, Blog
+- Target audience: potential employers, collaborators, outdoor community
+
+## Code Standards
+- Use TypeScript for type safety
+- Implement responsive design (mobile-first)
+- Follow React best practices (hooks, functional components)
+- Use CSS modules or styled-components for styling
+- Include accessibility features (ARIA labels, semantic HTML)
+
+## Design Preferences
+- Mountain/outdoor color palette (earth tones, forest greens, snow whites)
+- Clean, modern typography
+- Smooth animations and transitions
+- High-contrast ratios for readability
+- Fast loading times and performance optimization
+
+## Mountain Athlete Theme Integration
+- Incorporate outdoor imagery and metaphors
+- Use terminology that bridges tech and athletics
+- Highlight transferable skills (endurance, problem-solving, goal achievement)
+- Include adventure/gear-related projects if applicable
+
+## Technical Stack Preferences
+- React + TypeScript
+- CSS-in-JS or CSS Modules
+- React Router for navigation
+- Framer Motion for animations
+- Responsive design with CSS Grid/Flexbox
+- Performance optimization (lazy loading, code splitting)

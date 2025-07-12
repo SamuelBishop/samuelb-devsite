@@ -1,0 +1,190 @@
+.hero {
+  width: 100%;
+  height: 55vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: var(--summit-white);
+  background-color: #FFFFFF !important;
+  background-size: contain;
+  background-position: right center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  position: relative;
+  z-index: 1;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 600px;
+}
+
+
+.title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: var(--spacing-6xl);
+}
+
+.highlight {
+  color: var(--forest-green);
+  display: block;
+}
+
+.secondary {
+  color: var(--granite-gray);
+  display: block;
+  font-weight: 600;
+  margin-top: var(--spacing-md);
+}
+
+.description {
+  font-size: clamp(1.1rem, 2.5vw, 1.25rem);
+  line-height: 1.6;
+  color: var(--stone-dark);
+  max-width: 500px;
+  margin-bottom: var(--spacing-lg);
+}
+
+.actions {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.primaryButton {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--spacing-md) var(--spacing-xl);
+  background-color: var(--granite-gray);
+  color: var(--summit-white);
+  text-decoration: none;
+  border-radius: var(--radius-lg);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all var(--transition-normal);
+  box-shadow: var(--shadow-md);
+}
+
+.primaryButton:hover {
+  background-color: #1A252F;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+
+
+.scrollIndicator {
+  position: absolute;
+  bottom: var(--spacing-xl);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.scrollDot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--forest-green);
+  border-radius: 50%;
+  animation: scrollPulse 2s ease-in-out infinite;
+}
+
+@keyframes scrollPulse {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+.scrollText {
+  font-size: 0.875rem;
+  color: var(--stone-dark);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    height: 48vh;
+    padding: var(--spacing-xl) 0;
+  }
+  
+  .content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-2xl);
+  }
+  
+  .textContent {
+    text-align: center;
+    max-width: 100%;
+  }
+  
+  .actions {
+    justify-content: center;
+  }
+  
+  .primaryButton {
+    padding: var(--spacing-sm) var(--spacing-lg);
+    font-size: 1rem;
+  }
+  
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 45vh;
+  }
+  
+  .actions {
+    justify-content: center;
+  }
+  
+  .primaryButton {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+  }
+  
+
+}
+
+@media (max-width: 360px) {
+  .title {
+    font-size: 2rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+  }
+} 

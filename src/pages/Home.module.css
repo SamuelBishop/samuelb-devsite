@@ -1,0 +1,18 @@
+.homePage {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Ensure sections flow properly */
+.homePage > section {
+  width: 100%;
+}
+
+/* Add alternating background colors for visual interest */
+.homePage > section:nth-child(odd) {
+  background-color: var(--summit-white);
+}
+
+.homePage > section:nth-child(even) {
+  background-color: var(--mist-gray);
+} 
