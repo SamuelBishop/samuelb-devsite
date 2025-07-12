@@ -38,7 +38,7 @@ const Footer = () => {
             <ul className={styles.socialList}>
               <li>
                 <a 
-                  href="https://github.com/samuelb" 
+                  href="https://github.com/SamuelBishop" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className={styles.socialLink}
@@ -49,7 +49,7 @@ const Footer = () => {
               </li>
               <li>
                 <a 
-                  href="https://linkedin.com/in/samuelb" 
+                  href="https://www.linkedin.com/in/samuel-bishop-938212171/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className={styles.socialLink}
@@ -60,18 +60,7 @@ const Footer = () => {
               </li>
               <li>
                 <a 
-                  href="https://twitter.com/samuelb" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className={styles.socialLink}
-                  aria-label="Twitter"
-                >
-                  Twitter
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="mailto:hello@samuelb.dev" 
+                  href="mailto:samueljacobbg@gmail.com" 
                   className={styles.socialLink}
                   aria-label="Email"
                 >
@@ -90,7 +79,7 @@ const Footer = () => {
             <form className={styles.newsletterForm}>
               <input 
                 type="email" 
-                placeholder="your@email.com" 
+                placeholder="Enter your email" 
                 className={styles.emailInput}
                 aria-label="Email address"
               />

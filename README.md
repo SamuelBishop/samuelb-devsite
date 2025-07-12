@@ -79,7 +79,7 @@ This portfolio bridges two worlds: the logical precision of software engineering
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/samuelb-devsite.git
+   git clone https://github.com/SamuelBishop/samuelb-devsite.git
    cd samuelb-devsite
    ```
 
@@ -189,9 +189,9 @@ This project is open source under the [MIT License](LICENSE).
 ## 🏔️ Connect
 
 - **Portfolio**: [your-domain.com](https://your-domain.com)
-- **LinkedIn**: [your-profile](https://linkedin.com/in/your-profile)
-- **GitHub**: [your-github](https://github.com/your-github)
-- **Email**: your-email@domain.com
+- **LinkedIn**: [samuel-bishop-938212171](https://www.linkedin.com/in/samuel-bishop-938212171/)
+- **GitHub**: [SamuelBishop](https://github.com/SamuelBishop)
+- **Email**: samueljacobbg@gmail.com
 
 ---
 

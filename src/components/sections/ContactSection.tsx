@@ -23,9 +23,9 @@ const ContactSection = () => {
             <h3>Get in Touch</h3>
             <p>Whether you're looking to collaborate on a project or share trail stories, I'd love to hear from you.</p>
             <div className={styles.contactLinks}>
-              <a href="mailto:hello@samuelb.dev">Email</a>
-              <a href="https://linkedin.com/in/samuelb">LinkedIn</a>
-              <a href="https://github.com/samuelb">GitHub</a>
+              <a href="mailto:samueljacobbg@gmail.com">Email</a>
+              <a href="https://www.linkedin.com/in/samuel-bishop-938212171/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://github.com/SamuelBishop" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
         </div>
