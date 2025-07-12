@@ -43,8 +43,8 @@
   content: '';
   position: absolute;
   left: 30px;
-  top: 0;
-  bottom: 0;
+  top: 30px;
+  bottom: 30px;
   width: 2px;
   background: linear-gradient(180deg, var(--forest-green) 0%, var(--alpine-blue) 100%);
   border-radius: 1px;
@@ -65,7 +65,7 @@
 .experienceCard::before {
   content: '';
   position: absolute;
-  left: -51px;
+  left: -55px;
   top: 30px;
   width: 12px;
   height: 12px;
@@ -182,7 +182,7 @@
   }
   
   .experienceCard::before {
-    left: -41px;
+    left: -45px;
   }
   
   .cardHeader {
